@@ -48,6 +48,13 @@ class _MyAppState extends State<MyApp> {
                 fontFamily: 'normal',
                 splashColor: Colors.transparent),
             routes: routes,
+            builder: (context, widget) {
+              return MediaQuery(
+                ///设置文字大小不随系统设置改变
+                data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+                child: widget,
+              );
+            },
             home: LoginPage()));
   }
 }

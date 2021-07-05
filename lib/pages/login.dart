@@ -8,12 +8,23 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  int counter = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('login'),
-      ),
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('$counter'),
+          TextButton(
+              onPressed: () {
+                counter++;
+                setState(() {});
+              },
+              child: Text('增加'))
+        ],
+      )),
     );
   }
 }
