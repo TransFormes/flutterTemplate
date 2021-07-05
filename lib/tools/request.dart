@@ -1,11 +1,3 @@
-/*
- * @Author: liu
- * @Date: 2021-01-27 10:18:24
- * @LastEditTime: 2021-02-26 17:58:50
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /noso/Users/hw/Desktop/noso/superWallet/lib/util/request.dart
- */
 import 'dart:async';
 import 'dart:convert';
 
